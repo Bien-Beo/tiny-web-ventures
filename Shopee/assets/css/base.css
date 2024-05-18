@@ -1,0 +1,55 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid__full-width {
+  width: 100%;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-bold {
+  font-weight: 400 !important;
+}
+
+.cursor-text {
+  cursor: text !important;
+}
+
+.opacity-1 {
+  opacity: 1 !important;
+}
+
+.separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 14px;
+    border-left: 1px solid;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
